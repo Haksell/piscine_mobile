@@ -1,3 +1,8 @@
+## TODO
+
+- [ ] check day0/ex00
+- [ ] move ~/.android/avd to sgoinfre 
+
 ## Installation
 
 Add the following to `~/.zshrc` or whatever:
@@ -9,6 +14,8 @@ export GRADLE_USER_HOME=$MOBILE_DIR/.gradle
 export ANDROID_BUILD_CACHE_DIR=$MOBILE_DIR/.android_cache
 export JAVA_HOME=$MOBILE_DIR/jdk
 export ANDROID_USER_HOME=$MOBILE_DIR/.android
+export ANDROID_EMULATOR_HOME=$MOBILE_DIR/.android
+export ANDROID_AVD_HOME=$MOBILE_DIR/.android/avd
 
 export PATH=$MOBILE_DIR/flutter/bin:$PATH
 export PATH=$JAVA_HOME/bin:$PATH
@@ -17,9 +24,9 @@ export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
 ```
 
-Restart the terminal or run `source ~/.zshrc`.
-
 ```bash
+source ~/.zshrc
+rm -rf ~/.android ; ln -s $ANDROID_USER_HOME ~/.android
 mkdir -p $ANDROID_SDK_ROOT
 cd $MOBILE_DIR
 ```
