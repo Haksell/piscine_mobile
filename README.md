@@ -1,6 +1,5 @@
 ## TODO
 
-- [ ] check day0/ex00
 - [ ] move ~/.android/avd to sgoinfre 
 
 ## Installation
