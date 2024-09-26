@@ -1,7 +1,3 @@
-## TODO
-
-- [ ] move ~/.android/avd to sgoinfre 
-
 ## Installation
 
 Add the following to `~/.zshrc` or whatever:
