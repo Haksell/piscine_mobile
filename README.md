@@ -5,9 +5,9 @@ Add the following to `~/.zshrc` or whatever:
 export MOBILE_DIR=/sgoinfre/goinfre/Perso/$USER/mobile
 export ANDROID_HOME=$MOBILE_DIR/Android/Sdk
 export ANDROID_SDK_ROOT=$ANDROID_HOME
-export GRADLE_USER_HOME=$MOBILE_DIR/.gradle
-export ANDROID_BUILD_CACHE_DIR=$MOBILE_DIR/.android_cache
 export JAVA_HOME=$MOBILE_DIR/jdk
+export GRADLE_USER_HOME=/tmp/.gradle
+export ANDROID_BUILD_CACHE_DIR=/tmp/.android_cache
 export ANDROID_USER_HOME=/tmp/.android
 export ANDROID_EMULATOR_HOME=/tmp/.android
 export ANDROID_AVD_HOME=/tmp/.android/avd
