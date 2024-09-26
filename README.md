@@ -45,7 +45,7 @@ tar xvf android-studio-2024.1.2.13-linux.tar.gz
 rm -rf android-studio-2024.1.2.13-linux.tar.gz
 ```
 
-Run the wizard with `./android-studio/bin/studio.sh`. Follow the wizard. Click on Gear icon -> `Create Desktop Entry...`. Close Androi Studio.
+Run the wizard with `./android-studio/bin/studio.sh`. Follow the wizard. Click on Gear icon -> `Create Desktop Entry...`. Close Android Studio.
 
 Open Android Studio. More Actions -> SDK Manager. Check all of these, and click on `Apply`:
 - Android SDK Platform, API 34
