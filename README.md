@@ -45,9 +45,7 @@ tar xvf android-studio-2024.1.2.13-linux.tar.gz
 rm -rf android-studio-2024.1.2.13-linux.tar.gz
 ```
 
-Run the wizard with `./android-studio/bin/studio.sh`. Follow the wizard. gg
-Click on Gear icon -> `Create Desktop Entry...`
-Close. Open.
+Run the wizard with `./android-studio/bin/studio.sh`. Follow the wizard. Click on Gear icon -> `Create Desktop Entry...`. Close. Open.
 
 More Actions -> SDK Manager
 
