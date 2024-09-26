@@ -12,21 +12,23 @@ export ANDROID_SDK_ROOT=$ANDROID_HOME
 export GRADLE_USER_HOME=$MOBILE_DIR/.gradle
 export ANDROID_BUILD_CACHE_DIR=$MOBILE_DIR/.android_cache
 export JAVA_HOME=$MOBILE_DIR/jdk
-export ANDROID_USER_HOME=$MOBILE_DIR/.android
-export ANDROID_EMULATOR_HOME=$MOBILE_DIR/.android
-export ANDROID_AVD_HOME=$MOBILE_DIR/.android/avd
+export ANDROID_USER_HOME=/tmp/.android
+export ANDROID_EMULATOR_HOME=/tmp/.android
+export ANDROID_AVD_HOME=/tmp/.android/avd
 
 export PATH=$MOBILE_DIR/flutter/bin:$PATH
 export PATH=$JAVA_HOME/bin:$PATH
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/cmdline-tools/latest/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+mkdir -p $ANDROID_SDK_ROOT
+mkdir -p $ANDROID_AVD_HOME
 ```
 
 ```bash
+rm -rf $HOME/.android ; ln -s $ANDROID_USER_HOME $HOME/.android
 source ~/.zshrc
-rm -rf ~/.android ; ln -s $ANDROID_USER_HOME ~/.android
-mkdir -p $ANDROID_SDK_ROOT
 cd $MOBILE_DIR
 ```
 
